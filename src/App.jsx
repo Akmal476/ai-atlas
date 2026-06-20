@@ -4,6 +4,7 @@ import {
   X, ExternalLink, Zap, DollarSign,
   Lightbulb, GitCompare, Clock, ChevronRight, Search,
 } from "lucide-react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 // ---- Полностью статичные данные: без вызовов AI API, бесплатно и навсегда ----
 const CATEGORIES = {
@@ -77,7 +78,7 @@ const PROFILES = {
   },
   elevenlabs: {
     tagline: "Платформа для генерации реалистичной речи и клонирования голоса",
-    what_it_does: ["Озвучка текста человеческим голосом", "Клонирование голоса по образцу", "Перевод аудио с сохранением голоса", "Озвучка для видео и подкастов"],
+    what_it_does: ["Озвучка текста человеческим голосом", "Клонирование голоса по образцу", "Перевод ауд��о с сохранением голоса", "Озвучка для видео и подкастов"],
     pricing: "Freemium", pricing_detail: "Бесплатный лимит символов в месяц, платные планы для большего объёма",
     use_cases: ["Озвучка видео на YouTube", "Создание аудиоверсий статей", "Войсоверы для рекламы"],
     alternatives: [],
@@ -371,6 +372,7 @@ export default function AIAtlas() {
           Нажмите на любую точку на карте, чтобы открыть профиль инструмента
         </div>
       )}
+      <SpeedInsights />
     </div>
   );
 }
